@@ -1,0 +1,18 @@
+# demo-app/requirements.txt
+#
+# Dependencias declaradas intencionalmente con versiones vulnerables para la
+# demostración del prototipo. Cada paquete fue seleccionado por tener al menos
+# un CVE conocido y documentado en el NVD del NIST.
+#
+# Las versiones modernas de estos paquetes ya corrigen las vulnerabilidades
+# aquí declaradas. La elección de versiones antiguas es lo que vuelve realista
+# el escaneo de pip-audit.
+#
+# CVEs principales asociados:
+#   requests==2.19.1  -> CVE-2018-18074  (Authorization header leak en redirects)
+#   urllib3==1.24.1   -> CVE-2019-11324  (cert validation bypass)
+#   jinja2==2.10      -> CVE-2019-10906  (sandbox escape)
+
+requests==2.19.1
+urllib3==1.24.1
+jinja2==2.10

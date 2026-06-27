@@ -1,0 +1,11 @@
+# api/requirements.txt
+#
+# Dependencias de la API del prototipo. Todas son librerías estándar del
+# ecosistema Python para construir APIs REST: FastAPI como framework,
+# Uvicorn como servidor ASGI, requests como cliente HTTP para consultar
+# el NVD, y pydantic (incluida por FastAPI) para los modelos de datos.
+
+fastapi>=0.110
+uvicorn[standard]>=0.30
+requests>=2.32
+pydantic>=2.0
